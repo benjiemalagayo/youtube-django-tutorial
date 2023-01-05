@@ -1,0 +1,6 @@
+<form action='/sample/add' method="POST">
+    {%csrf_token%}
+    <input type="text" name="title" id="title" placeholder="Sample title">
+    <input type="text" name="year" id="year" placeholder="Sample year">
+    <input type="submit" value="Add">
+</form>

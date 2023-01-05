@@ -9,9 +9,13 @@
 <body>
 
     <h1>Movies</h1>
-    {% for samples in sample %}
-        <li>{{samples.title}}</li>
-    {% endfor %}
+    <ul>
+        {% for samples in sample %}
+            <li><a href={{samples.id}}>{{samples.title}}</a></li>
+        {% endfor %}
+    </ul>
+    <a href='/sample/add'>add a sample  </a>
+    
 
 </body>
 </html>
